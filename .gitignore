@@ -32,7 +32,7 @@ yarn-error.log*
 .vercel
 
 # Enviroment variables
-
+.env
 .env.development
 
 # IDE
