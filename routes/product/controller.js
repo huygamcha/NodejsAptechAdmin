@@ -24,6 +24,8 @@ module.exports = {
   getList: async (req, res, next) => {
     // NOTE
     try {
+      // console.log("««««« req.file.filename »»»»»", req.user);
+
       const { page, pageSize } = req.query; // 10 - 1
       const limit = pageSize || 10; // 10
       const skip = limit * (page - 1) || 0;

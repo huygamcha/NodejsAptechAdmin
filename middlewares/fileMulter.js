@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const {
   toSafeFileName,
-} = require('../helper/MongoDbHelper');
+} = require('../utils/MongoDbHelper');
 
 const UPLOAD_DIRECTORY = './public/uploads';
 
@@ -14,7 +14,6 @@ const upload = multer({
       // const { id, collectionName } = req.params;
 
       const PATH = `${UPLOAD_DIRECTORY}/media/${file.fieldname}`;
-      // console.log('PATH', PATH);
       if (!fs.existsSync(PATH)) {
         // Create a directory
         fs.mkdirSync(PATH, { recursive: true });

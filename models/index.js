@@ -5,4 +5,5 @@ module.exports = {
   Order: require("./order"),
   Customer: require("./customer"),
   Employee: require("./employee"),
+  Media: require("./media"),
 };
