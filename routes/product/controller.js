@@ -152,6 +152,7 @@ module.exports = {
         description,
         supplierId,
         categoryId,
+        image,
       } = req.body;
 
       // const existSupplier = await Supplier.find({ // 10s
@@ -197,6 +198,7 @@ module.exports = {
         description,
         supplierId,
         categoryId,
+        image,
       });
 
       let result = await newRecord.save();

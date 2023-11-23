@@ -53,6 +53,10 @@ const productSchema = new Schema(
       ref: "suppliers",
       required: true,
     },
+    image: {
+      type: String,
+      require: [true, "Hình ảnh không được bỏ trống"],
+    },
   },
   {
     versionKey: false,
